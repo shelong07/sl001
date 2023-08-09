@@ -1,0 +1,31 @@
+def process_string(input_string):
+    # 去除首尾空格
+    processed_string = input_string.strip()
+    
+    # 统计字符数
+    char_count = len(processed_string)
+    
+    # 统计单词数
+    word_count = len(processed_string.split())
+    
+    # 反转字符串
+    reversed_string = processed_string[::-1]
+    
+    # 将字符串转换为大写
+    uppercase_string = processed_string.upper()
+    
+    # 将字符串转换为小写
+    lowercase_string = processed_string.lower()
+    
+    # 返回处理后的结果
+    return processed_string, char_count, word_count, reversed_string, uppercase_string, lowercase_string
+
+# 测试代码
+input_string = "  Hello, World!  "
+result = process_string(input_string)
+print("Processed String:", result[0])
+print("Character Count:", result[1])
+print("Word Count:", result[2])
+print("Reversed String:", result[3])
+print("Uppercase String:", result[4])
+print("Lowercase String:", result[5])
